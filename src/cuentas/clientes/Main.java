@@ -3,23 +3,23 @@ package cuentas.clientes;
 public class Main {
 
     public static void main(String[] args) {
-        Cuenta cuenta1;
+        Cuenta cuenta2;
         double saldoActual;
 
-        cuenta1 = operativa_cuenta(null);
+        cuenta2 = operativa_cuenta(null);
         
-        System.out.println("El saldo actual es:"+ cuenta1.estado() );
+        System.out.println("El saldo actual es:"+ cuenta2.estado() );
 
         try {
-            cuenta1.retirar(2300);
-            System.out.println("El saldo actual es:"+ cuenta1.estado() );
+            cuenta2.retirar(2300);
+            System.out.println("El saldo actual es:"+ cuenta2.estado() );
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
         }
         try {
             System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(695);
-            System.out.println("El saldo actual es:"+ cuenta1.estado() );
+            cuenta2.ingresar(695);
+            System.out.println("El saldo actual es:"+ cuenta2.estado() );
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
